@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+input[type=text], input[type=password] {
+  width: 400px;
+  padding: 10px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input,
+input::-webkit-input-placeholder{
+	font-size:20px;
+	line-height: 2;
+}
+input[type=button]{
+	width:150px;
+	
+}
+</style>
+<title>Rail iot</title>
+</head>
+<body style="background-image:url('static/images/home.jpg');background-repeat:norepeat;background-size:cover;background-attachment:fixed;margin:auto;paddind:auto">
+	<!--header class="intro-header" style="background-image:url('static/images/train2.jpg')"-->
+		<div class="container text-center">
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>		
+		<br><br>
+		<br>
+                <div class="row">
+                        <div class="col-sm-2">
+				</div>
+				<div class="col-sm-8">
+
+<form>
+<input type="text" placeholder="Username" id="uname" /><br />
+<input type="password" placeholder="Password" id="pass" /><br />
+<input type="button" value="Login"  onclick="javascript:validate()" />
+</form>
+			</div>
+
+		</div>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+		</div>
+<script type="text/javascript">
+function validate()
+{
+if( document.getElementById("uname").value == "tata"
+&& document.getElementById("pass").value == "demo" )
+{
+location.href="/iotpoc";
+}
+else
+{
+alert( "Invalid Credintials" );
+}
+}
+</script>
+</body>
+</html>
